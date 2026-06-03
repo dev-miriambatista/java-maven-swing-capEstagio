@@ -1,18 +1,30 @@
-package Model;
+package org.example.Model;
 
-public class Alunos {
-    private int matricula, telefone,periodo;
-    private String nome, curso, email, obs;
+import jakarta.persistence.*;
 
-    public Alunos(
+@Entity
+@Table(name = "alunos")
+public class Aluno {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private int matricula, periodo;
+    private String nome,telefone, curso, email, obs;
+
+    // Construtor vazio — obrigatório para o JPA
+    public Aluno() {}
+
+    public Aluno(
             int matricula,
-            int telefone,
+            String telefone,
             String nome,
             String curso,
             int periodo,
             String email,
             String obs
-            ){
+    ){
 
         this.matricula = matricula;
         this.telefone = telefone;
@@ -23,21 +35,27 @@ public class Alunos {
         this.obs = obs;
     }
 
+    public int getId() { return id; }
+
     public int getMatricula() {
+
         return matricula;
+
     }
 
     public void setMatricula(int matricula) {
+
         this.matricula = matricula;
+
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
 
         return telefone;
-          }
 
-    public void setTelefone(int telefone) {
+    }
 
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
 
     }
@@ -51,7 +69,8 @@ public class Alunos {
     public void setNome(String nome) {
 
         this.nome = nome;
-            }
+
+    }
 
     public String getCurso() {
 
