@@ -31,7 +31,7 @@ public class Empresa {
         this.CNPJ = CNPJ;
         this.rSocial = rSocial;
         this.NFantasia = NFantasia;
-        this.endereco = this.endereco;
+        this.endereco = endereco;
         this.tel = tel;
         this.contato = contato;
     }

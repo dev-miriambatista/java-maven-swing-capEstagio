@@ -1,30 +1,18 @@
-package org.example.Model;
+package Model;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "alunos")
 public class Aluno {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    private int periodo;
-    private String matricula, nome,telefone, curso, email, obs;
-
-    // Construtor vazio — obrigatório para o JPA
-    public Aluno() {}
+    private int matricula, telefone,periodo;
+    private String nome, curso, email, obs;
 
     public Aluno(
-            String matricula,
-            String telefone,
+            int matricula,
+            int telefone,
             String nome,
             String curso,
             int periodo,
             String email,
             String obs
-    ){
+            ){
 
         this.matricula = matricula;
         this.telefone = telefone;
@@ -35,80 +23,67 @@ public class Aluno {
         this.obs = obs;
     }
 
-    public int getId() { return id; }
+    public int getMatricula() {
 
-    public String getMatricula() {
         return matricula;
 
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(int matricula) {
 
         this.matricula = matricula;
 
     }
 
-    public String getTelefone() {
-
+    public int getTelefone() {
         return telefone;
+          }
 
-    }
-
-    public void setTelefone(String telefone) {
+    public void setTelefone(int telefone) {
         this.telefone = telefone;
 
     }
 
     public String getNome() {
-
         return nome;
 
     }
 
     public void setNome(String nome) {
-
         this.nome = nome;
-
-    }
+            }
 
     public String getCurso() {
-
         return curso;
 
     }
 
     public void setCurso(String curso) {
-
         this.curso = curso;
 
     }
 
     public int getPeriodo() {
-
         return periodo;
 
     }
 
     public void setPeriodo(int periodo) {
-
         this.periodo = periodo;
 
     }
 
     public String getEmail() {
-
         return email;
 
     }
 
     public void setEmail(String email) {
-
         this.email = email;
 
     }
 
     public String getObs() {
-
         return obs;
 
     }

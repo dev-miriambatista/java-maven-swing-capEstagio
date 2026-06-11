@@ -3,5 +3,9 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console_1.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console_2.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console_3.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console_4.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/67429a48-dc36-4860-b0b3-79e8ce59b9cf/console_5.sql" value="67429a48-dc36-4860-b0b3-79e8ce59b9cf" />
   </component>
 </project>
